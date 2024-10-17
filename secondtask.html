@@ -47,6 +47,38 @@
         <input type="submit" value="Login">
         
     </form>
-  
+    <hr>
+    <h1>CV Creator Tool Feedback Form</h1>
+    <label for="emailid">Email:</label>
+    <input type="email" id="emailid" name="email" required><br>
+    <br>
+    <label for="passwordid">Password:</label>
+    <input type="password" id="passwordid" name="password" required><br>
+    <br>
+    <label for="text"><i>Your Feedback:</i></label><br>
+    <textarea id="text" maxlength="1000"></textarea><br>
+    <br>
+    <label for="cvdropdownid">How did you hear about our CV creator tool: </label>
+    <select name="cvdropdown" id="cvdropdownid" required>
+        <option value="facebook">Facebook</option>
+        <option value="linkedin" selected>Linkedin</option>
+        <option value="instagram">Instagram</option>
+        <option value="tiktok">TikTok</option>
+    </select> <br>
+    <br>
+    <input type="checkbox" id="newsletterid" name="newsletter" value="agree">
+    <label for="newsletterid"><b><u>Sign up for the newsletter</u></b>
+    </label> <br>
+    <br>
+  <label><b><i>Would you use this CV Creator Tool again?</i></b></label><br>
+  <br>
+  <input type="radio" id="yes" name="usingcvtoolagain" value="yes" checked>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="usingcvtoolagain" value="no">
+  <label for="yes">No</label><br>
+  <input type="radio" id="maybe" name="usingcvtoolagain" value="maybe">
+  <label for="yes">Maybe</label><br>
+  <br>
+  <input type="submit" value="Submit Feedback">
 </body>
 </html>
