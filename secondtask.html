@@ -7,19 +7,20 @@
    
    
 
-            <h1>Registration form</h1>
+            
     <form action="#" method="post" title="Registration form">
-        <label for="fname">Name:</label><br>
+        <h1>Registration form</h1>
+        <label for="fname">Name:</label>
         <input type="text" id="fname" name="fname" required><br>
-        <label for="username">Username:</label><br>
+        <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
-        <label for="email">Email:</label><br>
+        <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
-        <label for="password">Password:</label><br>
+        <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br>
-        <label for="age">Age:</label><br>
+        <label for="age">Age:</label>
         <input type="number" id="age" name="age" required><br>
-        <label for="pnumber">Phone Number:</label><br>
+        <label for="pnumber">Phone Number:</label>
         <input type="tel" id="pnumber" name="phone_number" required><br>
         <label for="gender">Gender:</label>
         <select name="gender" id="gender" required>
@@ -28,6 +29,209 @@
         </select> <br>
         <input type="submit">
     </form>
-  
+    <hr>
+    
+    <form action="#" method="post" title="Login form">
+        <h1>Login form</h1>
+        <label><b>Please select your login method: </b></label><br>
+        <br>
+        <input type="radio" id="username" name="loginchoice" value="username" required>
+        <label for="username">Username</label><br>
+        <input type="radio" id="email" name="loginchoice" value="email" checked required>
+        <label for="email">Email</label><br>
+ <br>
+        <label for="usernameemail">Username or email:</label>
+        <input type="text" id="usernameoremail" name="usernameoremail" required><br>
+        <br>
+        <label for="password">Password:</label> 
+        <input type="password" id="password" name="password" required><br>
+        <br>
+        <input type="submit" value="Login">
+        
+    </form>
+    <hr>
+    
+    <form action="#" method="post" title="CV Creator Tool Feedback Form">
+        <h1>CV Creator Tool Feedback Form</h1>
+    <label for="emailid">Email:</label>
+    <input type="email" id="emailid" name="email" required><br>
+    <br>
+    <label for="passwordid">Password:</label>
+    <input type="password" id="passwordid" name="password" required><br>
+    <br>
+    <label for="text"><i>Your Feedback:</i></label><br>
+    <textarea id="text" maxlength="1000"></textarea><br>
+    <br>
+    <label for="cvdropdownid">How did you hear about our CV creator tool: </label>
+    <select name="cvdropdown" id="cvdropdownid" required>
+        <option value="facebook">Facebook</option>
+        <option value="linkedin" selected>Linkedin</option>
+        <option value="instagram">Instagram</option>
+        <option value="tiktok">TikTok</option>
+    </select> <br>
+    <br>
+    <input type="checkbox" id="newsletterid" name="newsletter" value="agree">
+    <label for="newsletterid"><b><u>Sign up for the newsletter</u></b>
+    </label> <br>
+    <br>
+  <label><b><i>Would you use this CV Creator Tool again?</i></b></label><br>
+  <br>
+  <input type="radio" id="yes" name="usingcvtoolagain" value="yes" checked>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="usingcvtoolagain" value="no">
+  <label for="yes">No</label><br>
+  <input type="radio" id="maybe" name="usingcvtoolagain" value="maybe">
+  <label for="yes">Maybe</label><br>
+  <br>
+  <input type="submit" value="Submit Feedback">
+</form>
+<hr>
+<form action="#" method="post" title="CV Data Entry Form">
+<fieldset>
+<legend><b>Personal Information</b></legend>
+<label for="fullnameid">Full Name:</label>
+<input type="text" id="fullnameid" name="fullname">
+<br>
+<br>
+<label for="emailformid">Email:</label>
+<input type="email" id="emailformid" name="emailform">
+<br>
+<br>
+<label for="locationid">Location:</label>
+<input type="text" id="locationid" name="location">
+<br>
+<br>
+<label for="pfp">Upload Profile Picture:</label>
+<input type="file" id="pfp" name="profilepicture" accept=".jpg, .jpeg, .png">
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><b>Introduction</b></legend>
+<label for="intro">Write a short introduction about yourself</label><br>
+<textarea id="intro" maxlength="1000"></textarea>
+
+</fieldset>
+<fieldset>
+<legend><b>Skills</b></legend>
+<input type="checkbox" id="html" name="skills" value="html">
+<label for="html">HTML</label><br>
+<input type="checkbox" id="css" name="skills" value="css">
+<label for="css">CSS</label><br>
+<input type="checkbox" id="javascript" name="skills" value="javascript">
+<label for="javascript">JavaScript</label><br>
+<input type="checkbox" id="react" name="skills" value="react">
+<label for="react">React</label><br>
+<input type="checkbox" id="nodejs" name="skills" value="nodejs">
+<label for="nodejs">Node.js</label><br>
+<input type="checkbox" id="express" name="skills" value="express">
+<label for="express">Express</label><br>
+<input type="checkbox" id="git" name="skills" value="git">
+<label for="git">Git</label><br>
+<input type="checkbox" id="webperformanceoptimization" name="skills" value="webperformanceoptimization">
+<label for="webperformanceoptimization">Web Performance Optimization</label>
+
+</fieldset>
+<fieldset>
+<legend><b>Experience</b></legend>
+<label for="currentpositionid">Current Position:</label>
+<input type="text" id="currentpositionid" name="currentposition"><br>
+<br>
+<label for="experienceid">Describe your experience:</label><br>
+<textarea id="experienceid" maxlength="1000"></textarea>
+
+</fieldset>
+<fieldset>
+    <legend><b>Education & Certifications</b></legend>
+    <label for="degree">Degree:</label>
+    <select name="degree" id="degree" required>
+        <option value="highschool">High School</option>
+        <option value="bachelors">Bachelors</option>
+        <option value="masters">Masters</option>
+        <option value="phd">PHD</option>
+    </select> <br>
+    <br>
+    <label for="certificationsid">Certifications: </label>
+    <br>
+    <textarea id="certificationsid" maxlength="1000"></textarea>
+</fieldset>
+<fieldset>
+    <legend><b>Pesonal projects:</b></legend>
+    <label for="personalprojectsid">Describe your personal projects:</label><br>
+    <textarea id="personalprojectsid" maxlength="1000"></textarea>
+</fieldset><br>
+<input type="submit" value="Submit CV">
+</form>
+<hr>
+<form action="#" method="post" title="IT Center Ticket Form">
+    <h1>IT Center Ticket Form</h1>
+    <label for="problemid">Type of problem:</label>
+    <select name="problem" id="problemid">
+        <option value="cvcreatortool">CV Creator Tool</option>
+        <option value="dataprivacyconcerns">Data Privacy Concerns</option>
+        <option value="help" selected>Help & Guidance</option>
+        <option value="fileuploadissues">File upload issues</option>
+
+    </select>
+    <br>
+    <br>
+    <label>Select urgency: </label><br>
+    <label for="noturgentid">Not urgent</label>
+    <input type="radio" id="noturgentid" value="noturgent" name="urgency"><br>
+    <label for="mildid">Mild</label>
+    <input type="radio" id="mildid" value="mild" name="urgency" checked><br>
+    <label for="highlyurgentid">Highly urgent</label>
+    <input type="radio" id="highlyurgentid" value="highlyurgent" name="urgency"><br>
+<br>
+<label for="itcenterpic">Upload a picture (JPG, JPEG, PNG)</label>
+<input type="file" id="itcenterpic" name="itcenterpicture" accept=".png, .jpg, .jpeg">
+<br>
+<br>
+<input type="submit" value="Submit Ticket">
+</form>
+<hr>
+<form action="#" method="post" title="Subscription Management Form">
+<fieldset>
+    <legend>Details</legend>
+    <label for="subscriptionemailid"><b><u>Email:</u></b></label>
+    <input type="email" id="Subscriptionemailid" name="Subscriptionemail"><br><br>
+    <label for="linkid"><b><u>Link:</u></b></label>
+    <input type="url" id="linkid" name="link"><br><br>
+    <label for="subscriptionpasswordid"><b><u>Password:</u></b></label>
+    <input type="password" id="subscriptionpasswordid" name="subscriptionpassword"><br><br>
+
+
+</fieldset>
+<fieldset>
+<legend>Reasons For Ending Subscription</legend>
+<label for="reasonid"><b>Select Reason:</b></label>
+<select id="reasonid" name="reasonsforendingsub">
+    <option value="badquality">Bad quality</option><br>
+    <option value="smallsize">Small Size</option><br>
+    <option value="other" selected>Other</option><br>
+
+</select><br><br>
+<label><i>Would you use one of the other tools again?</i></label><br>
+<label id="toolsyesid">Yes</label>
+<input type="radio" id="toolsyesid" value="yes" name="usetoolsagain" checked><br>
+<label id="toolsnoid">No</label>
+<input type="radio" id="toolsnoid" value="no" name="usetoolsagain"><br>
+<label id="toolsmaybeid">Maybe</label>
+<input type="radio" id="toolsmaybeid" value="maybe" name="usetoolsagain"><br>
+<label for="additionalcommentsid">Additional Comments:</label><br>
+
+<textarea id="additionalcommentsid" name="additionalcomments" maxlength="1000"></textarea><br>
+
+
+</fieldset><br>
+<button type="submit" value="submit"  style="
+width: 60px; 
+height: 30px; 
+background-image: url('https://htmlcolorcodes.com/assets/images/colors/bright-blue-color-solid-background-1920x1080.png');
+background-size: cover;">
+<span><b>Submit</b></span>
+</button>
+
+</form>
 </body>
 </html>
